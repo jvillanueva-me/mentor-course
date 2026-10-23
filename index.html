@@ -1,0 +1,1198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A self-paced six-lesson course on finding a mentor and becoming an effective mentee.">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Supercharging Your Career With a Mentor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: persistent lesson rail on the left (drawer on small screens); each view opens with a photo hero, then a centered 720px reading column of blocks. */
+:root {
+  --navy: #0f1e36;
+  --navy-2: #182b4a;
+  --bg: #f5f7f6;
+  --surface: #ffffff;
+  --mist: #e3e9ee;
+  --mist-2: #cfd8e0;
+  --ink: #14223a;
+  --ink-soft: #4a5a70;
+  --teal: #137371;
+  --teal-soft: #dff1ef;
+  --aqua: #5ccfc6;
+  --gold: #e3ae45;
+  --gold-ink: #1a1508;
+  --gold-soft: #fbf0d9;
+  --ok: #1d7a52;
+  --ok-soft: #e1f3ea;
+  --bad: #b0413e;
+  --bad-soft: #f8e5e3;
+  --on-photo: #ffffff;
+  --overlay: 15, 30, 54;
+  --shadow: 0 1px 2px rgba(15, 30, 54, .06), 0 8px 24px rgba(15, 30, 54, .07);
+  --shadow-lift: 0 2px 4px rgba(15, 30, 54, .08), 0 16px 36px rgba(15, 30, 54, .12);
+  --ring: 0 0 0 3px var(--bg), 0 0 0 5px var(--teal);
+  --rail-bg: var(--navy);
+  --rail-ink: #e8eef4;
+  --rail-soft: #9fb0c4;
+  --reflect-bg: var(--navy);
+  --reflect-ink: #eef3f7;
+
+  --display: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --body: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --t-xs: .8125rem; --t-sm: .9375rem; --t-md: 1.0625rem; --t-lg: 1.25rem;
+  --t-xl: 1.625rem; --t-2xl: 2.125rem; --t-3xl: clamp(2.25rem, 4.6vw, 3.5rem);
+  --radius: 18px; --radius-sm: 12px;
+  --read: 720px;
+  --rail: 300px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1526; --surface: #13223a; --mist: #1b2d48; --mist-2: #2a3f5f;
+    --ink: #e9eef4; --ink-soft: #a9b7c9; --teal: #5ccfc6; --teal-soft: #123a44;
+    --gold-soft: #3a2f17; --ok: #6fd3a1; --ok-soft: #12382a; --bad: #f19a95; --bad-soft: #432023;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    --shadow-lift: 0 2px 4px rgba(0,0,0,.35), 0 16px 36px rgba(0,0,0,.35);
+    --rail-bg: #081120; --reflect-bg: #172a47;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b1526; --surface: #13223a; --mist: #1b2d48; --mist-2: #2a3f5f;
+  --ink: #e9eef4; --ink-soft: #a9b7c9; --teal: #5ccfc6; --teal-soft: #123a44;
+  --gold-soft: #3a2f17; --ok: #6fd3a1; --ok-soft: #12382a; --bad: #f19a95; --bad-soft: #432023;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  --shadow-lift: 0 2px 4px rgba(0,0,0,.35), 0 16px 36px rgba(0,0,0,.35);
+  --rail-bg: #081120; --reflect-bg: #172a47;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: auto; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--body); font-size: var(--t-md); line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--rail-bg); }
+h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.15; text-wrap: balance; margin: 0; letter-spacing: -.01em; }
+p { margin: 0; }
+a { color: inherit; }
+button, input, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: none; box-shadow: var(--ring); border-radius: 8px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.eyebrow { font-size: var(--t-xs); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--gold); color: var(--gold-ink); padding: 10px 16px; border-radius: 10px; font-weight: 600; text-decoration: none; }
+.skip:focus { top: calc(12px + env(safe-area-inset-top, 0px)); }
+
+/* ---------- shell ---------- */
+.shell { display: grid; grid-template-columns: var(--rail) minmax(0, 1fr); min-height: 100vh; }
+.rail {
+  position: sticky; top: env(safe-area-inset-top, 0px); height: calc(100vh - env(safe-area-inset-top, 0px)); overflow-y: auto;
+  background: var(--rail-bg); color: var(--rail-ink);
+  padding: 28px 20px 24px max(20px, env(safe-area-inset-left, 0px));
+  display: flex; flex-direction: column; gap: 24px;
+}
+.rail-brand { display: flex; flex-direction: column; gap: 6px; text-decoration: none; padding: 4px 8px; }
+.rail-brand .eyebrow { color: var(--aqua); font-size: .6875rem; }
+.rail-brand strong { font-family: var(--display); font-weight: 500; font-size: 1.25rem; line-height: 1.2; }
+.rail-progress { padding: 0 8px; display: grid; gap: 8px; }
+.rail-progress .row { display: flex; justify-content: space-between; font-size: var(--t-xs); color: var(--rail-soft); font-variant-numeric: tabular-nums; }
+.bar { height: 6px; border-radius: 99px; background: rgba(255,255,255,.12); overflow: hidden; }
+.bar > span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--aqua), var(--gold)); border-radius: inherit; transition: width .5s ease; }
+.rail nav ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.rail-link {
+  display: grid; grid-template-columns: 30px minmax(0,1fr); gap: 12px; align-items: center;
+  padding: 10px 10px; border-radius: 12px; text-decoration: none; color: var(--rail-soft);
+  font-size: var(--t-sm); line-height: 1.35; transition: background .15s, color .15s;
+}
+.rail-link:hover { background: rgba(255,255,255,.06); color: var(--rail-ink); }
+.rail-link[aria-current="page"] { background: rgba(92,207,198,.14); color: #fff; }
+.rail-link .dot {
+  width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center;
+  border: 1.5px solid rgba(255,255,255,.22); font-size: var(--t-xs); font-weight: 700; font-variant-numeric: tabular-nums;
+}
+.rail-link[aria-current="page"] .dot { border-color: var(--aqua); color: var(--aqua); }
+.rail-link.done .dot { background: var(--aqua); border-color: var(--aqua); color: var(--navy); }
+.rail-link .dot svg { width: 15px; height: 15px; }
+.rail-link small { display: block; font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase; opacity: .75; margin-bottom: 2px; }
+.rail-home .dot svg { width: 16px; height: 16px; }
+.rail-foot { margin-top: auto; padding: 0 8px; display: grid; gap: 10px; font-size: var(--t-xs); color: var(--rail-soft); }
+.linkish { background: none; border: 0; padding: 0; color: var(--rail-soft); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; justify-self: start; font-size: var(--t-xs); }
+.linkish:hover { color: var(--rail-ink); }
+.reset-confirm { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.reset-confirm button { border: 1px solid rgba(255,255,255,.25); background: transparent; color: var(--rail-ink); border-radius: 8px; padding: 4px 10px; cursor: pointer; font-size: var(--t-xs); }
+.reset-confirm button.yes { background: var(--gold); color: var(--gold-ink); border-color: var(--gold); }
+
+.topbar { display: none; }
+.rail-close { display: none; }
+.scrim { display: none; }
+
+@media (max-width: 1023px) {
+  .shell { grid-template-columns: minmax(0, 1fr); }
+  .topbar {
+    display: flex; align-items: center; gap: 12px; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30;
+    background: var(--rail-bg); color: var(--rail-ink);
+    padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .topbar .title { flex: 1; min-width: 0; font-family: var(--display); font-size: 1.0625rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .topbar .mini { font-size: var(--t-xs); color: var(--rail-soft); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .topbar .bar { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; border-radius: 0; }
+  .icon-btn { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 12px; border: 1px solid rgba(255,255,255,.18); background: transparent; color: inherit; cursor: pointer; }
+  .icon-btn svg { width: 20px; height: 20px; }
+  .rail {
+    position: fixed; z-index: 50; top: 0; left: 0; bottom: 0; height: auto; width: min(320px, 88vw);
+    padding-top: calc(20px + env(safe-area-inset-top, 0px)); padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    transform: translateX(-102%); visibility: hidden; transition: transform .28s ease, visibility 0s linear .28s;
+    box-shadow: 0 0 40px rgba(0,0,0,.35);
+  }
+  .rail.open { transform: none; visibility: visible; transition: transform .28s ease; }
+  .rail-brand { padding-right: 52px; }
+  .rail-close { display: grid; position: absolute; top: calc(14px + env(safe-area-inset-top, 0px)); right: 14px; }
+  .scrim { position: fixed; inset: 0; z-index: 40; background: rgba(8,17,32,.55); }
+  .scrim.open { display: block; }
+}
+
+/* ---------- view basics ---------- */
+main { min-width: 0; }
+.gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 640px) { .gutter { padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); } }
+.col { max-width: var(--read); margin-inline: auto; }
+.col-wide { max-width: 1040px; margin-inline: auto; }
+
+.hero { position: relative; isolation: isolate; color: var(--on-photo); overflow: hidden; background: var(--navy); }
+.hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.hero::after { content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(100deg, rgba(var(--overlay), .94) 0%, rgba(var(--overlay), .82) 45%, rgba(var(--overlay), .55) 100%); }
+.hero-inner { padding-block: clamp(40px, 7vw, 88px) clamp(44px, 7vw, 96px); display: grid; gap: 18px; }
+.hero .course-name { font-size: var(--t-xs); color: rgba(255,255,255,.72); letter-spacing: .04em; }
+.hero .meta { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin-top: 6px; }
+.chip-on-photo { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 99px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); font-size: var(--t-xs); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.chip-on-photo.theme { background: transparent; border-color: transparent; padding-inline: 0; color: var(--aqua); }
+.hero h1 { font-size: var(--t-3xl); max-width: 16ch; outline: none; }
+.hero p.lede { font-size: var(--t-lg); line-height: 1.5; max-width: 54ch; color: rgba(255,255,255,.88); }
+.hero .status-chip { font-size: var(--t-xs); color: rgba(255,255,255,.8); display: inline-flex; gap: 6px; align-items: center; }
+.hero .status-chip svg { width: 15px; height: 15px; color: var(--aqua); }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 12px 22px;
+  border-radius: 99px; border: 1.5px solid transparent; font-weight: 600; font-size: var(--t-md); line-height: 1.2;
+  text-decoration: none; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn-gold { background: var(--gold); color: var(--gold-ink); box-shadow: 0 6px 18px rgba(227,174,69,.28); }
+.btn-gold:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(227,174,69,.38); }
+.btn-gold:active { transform: none; }
+.btn-ghost-light { color: #fff; border-color: rgba(255,255,255,.4); background: rgba(255,255,255,.04); }
+.btn-ghost-light:hover { background: rgba(255,255,255,.12); }
+.btn-outline { color: var(--ink); border-color: var(--mist-2); background: var(--surface); }
+.btn-outline:hover { border-color: var(--teal); color: var(--teal); }
+.btn-teal { background: var(--teal); color: var(--bg); }
+.btn-teal:hover { filter: brightness(1.08); }
+.btn[disabled], .btn[aria-disabled="true"] { opacity: .5; cursor: not-allowed; transform: none; box-shadow: none; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+.section { padding-block: clamp(40px, 6vw, 72px); }
+.section + .section { padding-top: 0; }
+.stack { display: grid; gap: 20px; }
+.stack-lg { display: grid; gap: clamp(40px, 6vw, 64px); }
+.label { color: var(--teal); }
+.h2 { font-size: var(--t-2xl); }
+.h3 { font-size: var(--t-xl); }
+.prose { color: var(--ink-soft); display: grid; gap: 16px; max-width: 65ch; }
+.prose strong { color: var(--ink); }
+
+/* essential idea */
+.essential { background: var(--mist); border-radius: var(--radius); padding: clamp(24px, 4vw, 40px); display: grid; gap: 14px; position: relative; overflow: hidden; }
+.essential .eyebrow { color: var(--teal); display: inline-flex; gap: 8px; align-items: center; }
+.essential .eyebrow svg { width: 16px; height: 16px; }
+.essential blockquote { margin: 0; font-family: var(--display); font-size: clamp(1.625rem, 3.4vw, 2.25rem); line-height: 1.2; color: var(--ink); text-wrap: balance; }
+.essential p { color: var(--ink-soft); max-width: 60ch; }
+
+/* teaching cards */
+.cards, .flips { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 700px) { .cards, .flips { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.card { background: var(--surface); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); display: grid; gap: 10px; align-content: start; border: 1px solid transparent; }
+.card .num { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: var(--teal-soft); color: var(--teal); font-weight: 700; font-size: var(--t-sm); font-variant-numeric: tabular-nums; }
+.card h3 { font-size: 1.3125rem; }
+.card p { color: var(--ink-soft); font-size: var(--t-sm); line-height: 1.6; }
+
+/* activity shell */
+.activity { background: var(--surface); border-radius: calc(var(--radius) + 4px); box-shadow: var(--shadow); padding: clamp(22px, 4vw, 40px); display: grid; gap: 22px; border: 1px solid var(--mist); }
+.activity-head { display: grid; gap: 8px; }
+.activity-head .eyebrow { color: var(--teal); display: inline-flex; align-items: center; gap: 8px; }
+.activity-head .eyebrow svg { width: 16px; height: 16px; }
+.activity-head p { color: var(--ink-soft); }
+.feedback { border-radius: var(--radius-sm); padding: 14px 16px; font-size: var(--t-sm); display: flex; gap: 12px; align-items: flex-start; }
+.feedback svg { width: 20px; height: 20px; flex: none; margin-top: 2px; }
+.feedback.ok { background: var(--ok-soft); color: var(--ok); }
+.feedback.bad { background: var(--bad-soft); color: var(--bad); }
+.feedback.info { background: var(--gold-soft); color: var(--ink); }
+.feedback.info svg { color: #b07d16; }
+.feedback b { color: inherit; }
+.feedback p { color: var(--ink); }
+.feedback.ok p, .feedback.bad p { color: inherit; }
+
+/* lesson 1 progressive reveal */
+.reveal-list { display: grid; gap: 12px; list-style: none; margin: 0; padding: 0; }
+.reveal-item { display: grid; grid-template-columns: 44px minmax(0,1fr); gap: 16px; padding: 18px; border-radius: var(--radius); border: 1.5px solid var(--mist); background: var(--bg); }
+.reveal-item .n { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; background: var(--mist); color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.reveal-item h3 { font-size: 1.25rem; margin-bottom: 4px; outline: none; }
+.reveal-item p { color: var(--ink-soft); font-size: var(--t-sm); }
+.reveal-item.current { border-color: var(--teal); background: var(--surface); box-shadow: var(--shadow); }
+.reveal-item.current .n { background: var(--teal); color: var(--bg); }
+.reveal-item.locked { border-style: dashed; background: transparent; align-items: center; }
+.reveal-item.locked .n { background: transparent; border: 1.5px dashed var(--mist-2); }
+.reveal-item.locked .n svg { width: 16px; height: 16px; }
+.reveal-item.locked span { color: var(--ink-soft); font-size: var(--t-sm); }
+.steps-meter { display: flex; gap: 6px; }
+.steps-meter i { flex: 1; height: 5px; border-radius: 99px; background: var(--mist); }
+.steps-meter i.on { background: var(--teal); }
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-item.just { animation: rise .4s ease both; }
+  @keyframes rise { from { transform: translateY(8px); } to { transform: none; } }
+}
+
+/* sorting */
+.sort-bank { min-height: 72px; border: 1.5px dashed var(--mist-2); border-radius: var(--radius); padding: 14px; display: flex; flex-wrap: wrap; gap: 10px; align-content: flex-start; background: var(--bg); }
+.sort-bank.empty::before { content: "All statements placed."; color: var(--ink-soft); font-size: var(--t-sm); align-self: center; padding-left: 4px; }
+.sort-zones { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+.zone { border-radius: var(--radius); background: var(--bg); border: 1.5px solid var(--mist); padding: 14px; display: grid; gap: 10px; align-content: start; min-height: 170px; transition: border-color .15s, background .15s; }
+.zone h4 { margin: 0; font-size: var(--t-sm); font-weight: 700; }
+.zone .zone-items { display: grid; gap: 8px; }
+.zone.drop-ready { border-color: var(--teal); border-style: dashed; }
+.zone.drag-over { border-color: var(--teal); background: var(--teal-soft); border-style: solid; }
+.zone-btn { border: 1.5px dashed var(--teal); color: var(--teal); background: transparent; border-radius: 10px; padding: 8px 10px; font-size: var(--t-xs); font-weight: 600; cursor: pointer; }
+.zone-btn:hover { background: var(--teal-soft); }
+.sort-chip {
+  display: inline-flex; align-items: center; gap: 8px; text-align: left; padding: 10px 14px; border-radius: 12px;
+  border: 1.5px solid var(--mist-2); background: var(--surface); cursor: grab; font-size: var(--t-sm); font-weight: 500; line-height: 1.3;
+  box-shadow: 0 1px 2px rgba(15,30,54,.06); transition: border-color .15s, box-shadow .15s, transform .15s;
+}
+.sort-chip:hover { border-color: var(--teal); }
+.sort-chip[aria-pressed="true"] { border-color: var(--teal); background: var(--teal-soft); box-shadow: 0 0 0 3px var(--teal-soft); }
+.sort-chip.dragging { opacity: .5; }
+.sort-chip svg { width: 16px; height: 16px; flex: none; }
+.sort-chip .grip { color: var(--ink-soft); }
+.sort-chip.right { border-color: var(--ok); background: var(--ok-soft); color: var(--ok); }
+.sort-chip.wrong { border-color: var(--bad); background: var(--bad-soft); color: var(--bad); }
+
+/* flip cards */
+.flip { perspective: 1200px; border: 0; padding: 0; background: none; cursor: pointer; text-align: left; border-radius: var(--radius); display: grid; }
+.flip-inner { display: grid; transition: transform .55s cubic-bezier(.2,.7,.2,1); transform-style: preserve-3d; border-radius: var(--radius); }
+.flip[aria-pressed="true"] .flip-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: var(--radius); padding: 22px; display: grid; gap: 12px; align-content: space-between; min-height: 230px; }
+.face.front { background: var(--navy); color: #fff; }
+.face.front q { font-family: var(--display); font-size: 1.375rem; line-height: 1.3; quotes: "“" "”"; }
+.face.back { background: var(--teal-soft); color: var(--ink); transform: rotateY(180deg); border: 1.5px solid var(--teal); }
+.face.back p { font-size: var(--t-sm); }
+.face .hint { font-size: var(--t-xs); font-weight: 600; letter-spacing: .1em; text-transform: uppercase; display: inline-flex; gap: 8px; align-items: center; }
+.face.front .hint { color: var(--aqua); }
+.face.back .hint { color: var(--teal); }
+.face .hint svg { width: 15px; height: 15px; }
+.flip:hover .face.front { background: var(--navy-2); }
+.flip:focus-visible { box-shadow: var(--ring); }
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner { transition: none; transform: none !important; }
+  .face.back { transform: none; }
+  .flip[aria-pressed="true"] .face.front, .flip[aria-pressed="false"] .face.back { visibility: hidden; }
+}
+
+/* option cards (radios) */
+.options { display: grid; gap: 12px; border: 0; padding: 0; margin: 0; min-width: 0; }
+.options legend { padding: 0; margin-bottom: 12px; font-weight: 700; font-size: var(--t-md); }
+.opt { position: relative; display: grid; grid-template-columns: 24px minmax(0,1fr); gap: 14px; align-items: start; padding: 16px 18px; border-radius: 14px; border: 1.5px solid var(--mist-2); background: var(--surface); cursor: pointer; transition: border-color .15s, background .15s; }
+.opt:hover { border-color: var(--teal); }
+.opt input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.opt .mark { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--mist-2); display: grid; place-items: center; margin-top: 1px; background: var(--surface); }
+.opt .mark::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--teal); transform: scale(0); transition: transform .15s; }
+.opt input:checked ~ .mark { border-color: var(--teal); }
+.opt input:checked ~ .mark::after { transform: scale(1); }
+.opt:has(input:checked) { border-color: var(--teal); background: var(--teal-soft); }
+.opt:has(input:focus-visible) { box-shadow: var(--ring); }
+.opt strong { display: block; font-weight: 600; }
+.opt span.sub { color: var(--ink-soft); font-size: var(--t-sm); }
+.opt.is-right { border-color: var(--ok); background: var(--ok-soft); }
+.opt.is-wrong { border-color: var(--bad); background: var(--bad-soft); }
+.opt-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+
+.result { border-radius: var(--radius); background: var(--navy); color: #fff; padding: 22px 24px; display: grid; gap: 8px; }
+.result .eyebrow { color: var(--gold); }
+.result p { font-family: var(--display); font-size: 1.375rem; line-height: 1.35; }
+
+/* video */
+.video { position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: var(--radius); overflow: hidden; isolation: isolate; color: #fff; display: grid; place-items: center; text-align: center; padding: 24px; background: var(--navy); }
+.video img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.video::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(circle at 50% 45%, rgba(var(--overlay), .55), rgba(var(--overlay), .88)); }
+.video .v-body { display: grid; gap: 10px; justify-items: center; max-width: 42ch; }
+.play { width: 76px; height: 76px; border-radius: 50%; border: 0; background: var(--gold); color: var(--gold-ink); display: grid; place-items: center; cursor: pointer; box-shadow: 0 0 0 10px rgba(227,174,69,.22); transition: transform .2s, box-shadow .2s; }
+.play svg { width: 28px; height: 28px; margin-left: 4px; }
+.play:hover { transform: scale(1.05); box-shadow: 0 0 0 14px rgba(227,174,69,.2); }
+.play:focus-visible { box-shadow: 0 0 0 4px #fff, 0 0 0 8px var(--gold); border-radius: 50%; }
+.video h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); color: #fff; }
+.video p { color: rgba(255,255,255,.82); font-size: var(--t-sm); }
+.video .soon { font-size: var(--t-xs); background: rgba(255,255,255,.14); border-radius: 99px; padding: 6px 12px; }
+@media (max-width: 480px) { .play { width: 56px; height: 56px; } .video p.desc { display: none; } }
+
+/* habits */
+.habits { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.habit { display: grid; grid-template-columns: 28px minmax(0,1fr); gap: 14px; align-items: center; text-align: left; padding: 18px; border-radius: 14px; border: 1.5px solid var(--mist-2); background: var(--surface); cursor: pointer; font-weight: 500; transition: border-color .15s, background .15s, transform .15s; }
+.habit:hover { border-color: var(--teal); }
+.habit .box { width: 26px; height: 26px; border-radius: 8px; border: 2px solid var(--mist-2); display: grid; place-items: center; color: transparent; }
+.habit .box svg { width: 16px; height: 16px; }
+.habit[aria-pressed="true"] { border-color: var(--teal); background: var(--teal-soft); }
+.habit[aria-pressed="true"] .box { background: var(--teal); border-color: var(--teal); color: var(--bg); }
+.meter-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.meter-row .bar { flex: 1; min-width: 160px; background: var(--mist); height: 8px; }
+.meter-row .bar > span { background: var(--teal); }
+.meter-row b { font-variant-numeric: tabular-nums; font-size: var(--t-sm); }
+
+/* scenarios */
+.scenario { display: grid; gap: 16px; padding: 22px; border-radius: var(--radius); background: var(--bg); border: 1px solid var(--mist); }
+.scenario .eyebrow { color: var(--ink-soft); }
+.scenario .situation { font-family: var(--display); font-size: 1.375rem; line-height: 1.3; }
+.score { font-size: var(--t-sm); color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+
+/* plan builder */
+.plan-out { border-radius: var(--radius); background: var(--navy); color: #fff; padding: 26px; display: grid; gap: 14px; }
+.plan-out .eyebrow { color: var(--gold); }
+.plan-out p.plan { font-family: var(--display); font-size: clamp(1.375rem, 3vw, 1.75rem); line-height: 1.3; }
+.plan-out p.wait { color: rgba(255,255,255,.75); }
+.plan-out .btn-row .btn { min-height: 42px; padding: 8px 18px; font-size: var(--t-sm); }
+
+/* reflection */
+.reflect { background: var(--reflect-bg); color: var(--reflect-ink); border-radius: calc(var(--radius) + 4px); padding: clamp(26px, 5vw, 48px); display: grid; gap: 16px; position: relative; overflow: hidden; }
+.reflect::before { content: ""; position: absolute; right: -80px; top: -80px; width: 240px; height: 240px; border-radius: 50%; border: 1px solid rgba(92,207,198,.25); box-shadow: 0 0 0 40px rgba(92,207,198,.05), 0 0 0 80px rgba(92,207,198,.03); pointer-events: none; }
+.reflect .eyebrow { color: var(--gold); display: inline-flex; align-items: center; gap: 10px; }
+.reflect .eyebrow svg { width: 18px; height: 18px; }
+.reflect h2 { font-size: var(--t-2xl); color: #fff; }
+.reflect p { color: rgba(238,243,247,.84); max-width: 58ch; }
+.reflect label { font-size: var(--t-xs); font-weight: 600; letter-spacing: .06em; color: rgba(238,243,247,.75); display: block; margin-bottom: 8px; }
+.reflect textarea { width: 100%; min-height: 110px; resize: vertical; border-radius: 14px; border: 1.5px solid rgba(255,255,255,.18); background: rgba(255,255,255,.06); color: #fff; padding: 14px 16px; line-height: 1.5; }
+.reflect textarea::placeholder { color: rgba(238,243,247,.5); }
+.reflect textarea:focus-visible { border-color: var(--aqua); box-shadow: 0 0 0 3px rgba(92,207,198,.35); border-radius: 14px; }
+.saved-note { font-size: var(--t-xs); color: var(--aqua); min-height: 1.2em; margin-top: 6px; }
+
+/* lesson end */
+.lesson-end { display: grid; gap: 16px; }
+.next-card { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 18px; align-items: center; padding: 22px 24px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); text-decoration: none; border: 1.5px solid transparent; transition: border-color .15s, box-shadow .15s, transform .15s; }
+.next-card:hover { border-color: var(--teal); box-shadow: var(--shadow-lift); transform: translateY(-2px); }
+.next-card .eyebrow { color: var(--teal); }
+.next-card strong { display: block; font-family: var(--display); font-weight: 500; font-size: var(--t-xl); line-height: 1.2; margin-top: 4px; }
+.next-card .arrow { width: 52px; height: 52px; border-radius: 50%; background: var(--gold); color: var(--gold-ink); display: grid; place-items: center; }
+.next-card .arrow svg { width: 22px; height: 22px; }
+.prev-link { display: inline-flex; gap: 8px; align-items: center; color: var(--ink-soft); text-decoration: none; font-size: var(--t-sm); font-weight: 500; justify-self: start; padding: 4px 2px; }
+.prev-link:hover { color: var(--teal); }
+.prev-link svg { width: 16px; height: 16px; }
+.complete-badge { display: inline-flex; align-items: center; gap: 8px; font-size: var(--t-sm); color: var(--ok); font-weight: 600; }
+.complete-badge svg { width: 18px; height: 18px; }
+
+/* home */
+.home-hero .hero-inner { padding-block: clamp(56px, 10vw, 128px); gap: 22px; }
+.home-hero .eyebrow { color: var(--aqua); }
+.home-hero h1 { max-width: 18ch; }
+.adv { display: grid; gap: clamp(28px, 5vw, 56px); grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); align-items: center; }
+@media (max-width: 820px) { .adv { grid-template-columns: minmax(0,1fr); } }
+.adv-photo { border-radius: calc(var(--radius) + 6px); overflow: hidden; aspect-ratio: 4 / 5; max-width: 100%; box-shadow: var(--shadow-lift); position: relative; }
+.adv-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 820px) { .adv-photo { aspect-ratio: 16 / 10; } }
+.learn { background: var(--surface); border-radius: var(--radius); padding: 22px 24px; box-shadow: var(--shadow); display: grid; gap: 14px; }
+.learn h3 { font-family: var(--body); font-size: var(--t-sm); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); }
+.learn ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.learn li { display: grid; grid-template-columns: 24px minmax(0,1fr); gap: 12px; align-items: start; }
+.learn li svg { width: 22px; height: 22px; color: var(--teal); margin-top: 2px; }
+.lesson-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(0,1fr)); list-style: none; margin: 0; padding: 0; }
+@media (max-width: 960px) { .lesson-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 560px) { .lesson-grid { grid-template-columns: minmax(0,1fr); } }
+.lesson-card { height: 100%; display: grid; grid-template-rows: auto 1fr; background: var(--surface); border-radius: var(--radius); overflow: hidden; text-decoration: none; box-shadow: var(--shadow); border: 1.5px solid transparent; transition: transform .2s ease, box-shadow .2s ease, border-color .2s; }
+.lesson-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lift); border-color: var(--teal); }
+.lesson-card .thumb { aspect-ratio: 16 / 8; position: relative; overflow: hidden; background: var(--navy); }
+.lesson-card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+.lesson-card:hover .thumb img { transform: scale(1.04); }
+.lesson-card .thumb::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(var(--overlay), .15), rgba(var(--overlay), .6)); }
+.lesson-card .thumb span { position: absolute; left: 16px; bottom: 12px; z-index: 1; color: #fff; font-family: var(--display); font-size: 2.25rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.lesson-card .body { padding: 18px 20px 20px; display: grid; gap: 6px; align-content: start; }
+.lesson-card h3 { font-size: 1.3125rem; }
+.lesson-card p { color: var(--ink-soft); font-size: var(--t-sm); }
+.lesson-card .state { margin-top: 8px; font-size: var(--t-xs); font-weight: 600; color: var(--ink-soft); display: inline-flex; align-items: center; gap: 6px; }
+.lesson-card .state svg { width: 15px; height: 15px; }
+.lesson-card .state.done { color: var(--ok); }
+.lesson-card .state.now { color: #b07d16; }
+:root[data-theme="dark"] .lesson-card .state.now { color: var(--gold); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .lesson-card .state.now { color: var(--gold); } }
+.section-head { display: grid; gap: 10px; margin-bottom: 28px; }
+.footer { padding-block: 32px 48px; color: var(--ink-soft); font-size: var(--t-xs); text-align: center; }
+.footer p + p { margin-top: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+  .btn-gold:hover, .lesson-card:hover, .next-card:hover { transform: none; }
+  .lesson-card:hover .thumb img { transform: none; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#view" id="skip-link">Skip to lesson content</a>
+<div class="shell">
+  <div class="scrim" id="scrim"></div>
+  <aside class="rail" id="rail" aria-label="Course navigation">
+    <button class="icon-btn rail-close" id="rail-close" type="button" aria-label="Close lesson menu"></button>
+    <a class="rail-brand" href="#home" data-route="home">
+      <span class="eyebrow">Mentorship course</span>
+      <strong>Supercharging Your Career With the Help of a Mentor</strong>
+    </a>
+    <div class="rail-progress">
+      <div class="row"><span>Your progress</span><span id="rail-count">0 of 6 lessons</span></div>
+      <div class="bar" role="progressbar" aria-label="Course progress" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" id="rail-bar"><span></span></div>
+    </div>
+    <nav aria-label="Lessons"><ol id="rail-list"></ol></nav>
+    <div class="rail-foot">
+      <span>Progress and notes are saved in this browser only.</span>
+      <div id="reset-area"><button type="button" class="linkish" id="reset-btn">Reset my progress</button></div>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="topbar">
+      <button class="icon-btn" id="menu-btn" type="button" aria-label="Open lesson menu" aria-expanded="false" aria-controls="rail"></button>
+      <span class="title" id="topbar-title">Course home</span>
+      <span class="mini" id="topbar-count">0/6</span>
+      <div class="bar" aria-hidden="true" id="topbar-bar"><span></span></div>
+    </header>
+    <main id="view" tabindex="-1"></main>
+  </div>
+</div>
+<div class="sr-only" aria-live="polite" id="announcer"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- icons ---------- */
+  const I = {
+    check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+    checkCircle: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M7.8 12.4l2.9 2.9 5.5-5.6"/></svg>',
+    x: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+    xCircle: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M9 9l6 6M15 9l-6 6"/></svg>',
+    arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+    back: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>',
+    menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>',
+    home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-6.5 8 6.5"/><path d="M6.5 9.5V19h11V9.5"/></svg>',
+    play: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.8v14.4a1 1 0 0 0 1.5.86l11.6-7.2a1 1 0 0 0 0-1.72L8.5 3.94A1 1 0 0 0 7 4.8z"/></svg>',
+    lock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>',
+    compass: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>',
+    spark: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/></svg>',
+    pause: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M10 9v6M14 9v6"/></svg>',
+    flip: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8.5M20 4v4.5h-4.5M20 12a8 8 0 0 1-13.7 5.6L4 15.5M4 20v-4.5h4.5"/></svg>',
+    grip: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="9" cy="6" r="1.6"/><circle cx="15" cy="6" r="1.6"/><circle cx="9" cy="12" r="1.6"/><circle cx="15" cy="12" r="1.6"/><circle cx="9" cy="18" r="1.6"/><circle cx="15" cy="18" r="1.6"/></svg>',
+    info: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v6M12 7.5v.01"/></svg>',
+    clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3 2"/></svg>'
+  };
+
+  /* ---------- state ---------- */
+  const KEY = "mentor-course-v1";
+  const blank = () => ({ done: {}, notes: {}, l1: 0, sort: {}, sortChecked: false, flips: {}, match: "", habits: {}, scen: {}, scenChecked: {}, focus: "", commit: "" });
+  let S = blank();
+  try { const raw = localStorage.getItem(KEY); if (raw) S = Object.assign(blank(), JSON.parse(raw)); } catch (e) {}
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const $ = (sel, root) => (root || document).querySelector(sel);
+  const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
+  const announce = (msg) => { const a = $("#announcer"); a.textContent = ""; setTimeout(() => { a.textContent = msg; }, 30); };
+
+  /* ---------- content ---------- */
+  const COURSE = "Supercharging Your Career With the Help of a Mentor";
+  const LESSONS = [
+    {
+      n: 1, slug: "lesson-1", short: "What Is Mentoring?", title: "What Is Mentoring?", cardDesc: "The foundation of an effective partnership.",
+      theme: "Foundations", img: "images/lesson-1.jpg", alt: "A colleague leans in to guide a coworker through work on a laptop",
+      hero: "Discover the kind of developmental partnership that can accelerate a career—and the role you play in making it work.",
+      essential: "A mentor is a trusted guide—not a shortcut.",
+      essentialCopy: "Mentoring is a purposeful relationship in which a more experienced person shares perspective, encouragement, and practical wisdom to help another person grow. It is built on trust, curiosity, and shared accountability.",
+      reflect: { h: "Who has helped you grow?", p: "Think of someone whose advice, example, or encouragement moved you forward. What did they do that made their support meaningful?" }
+    },
+    {
+      n: 2, slug: "lesson-2", short: "Limitations of Mentors", title: "Understanding the limits of mentors", cardDesc: "Set clear, realistic expectations.",
+      theme: "Healthy expectations", img: "images/lesson-2.jpg", alt: "Colleagues taking notes around a long wooden meeting table",
+      hero: "Great mentors can accelerate your growth—but they cannot do your work for you. Learn where their support is most valuable and where your ownership begins.",
+      essential: "A mentor is a guide, not a substitute for your judgment.",
+      essentialCopy: "Mentors share perspective, experience, and encouragement. They can help you see options more clearly—but you remain responsible for your choices, preparation, and follow-through.",
+      cards: [
+        ["They offer perspective", "A mentor can help you see patterns, ask better questions, and consider possibilities you may have missed."],
+        ["They open doors—sometimes", "Introductions and opportunities can help, but trust is earned through your own preparation and contribution."],
+        ["They cannot grow for you", "Progress comes from your decisions, practice, and commitment—not from someone else’s expertise alone."]
+      ],
+      reflect: { h: "What will you own?", p: "Before your next mentoring conversation, identify one decision, action, or question that is yours to prepare—and one kind of perspective you would value from a mentor." }
+    },
+    {
+      n: 3, slug: "lesson-3", short: "How Do I Find a Mentor?", title: "How do I find a mentor?", cardDesc: "Find the right fit for your goals.",
+      theme: "Finding the fit", img: "images/lesson-3.jpg", alt: "Four colleagues in a relaxed, smiling conversation at a café table",
+      hero: "The right mentor is someone whose perspective, availability, and approach can help you move toward a meaningful goal.",
+      essential: "Start with the growth you want to create.",
+      essentialCopy: "Clarify what you are working toward before you look for a person. A focused ask makes it easier for a potential mentor to see how they can help.",
+      cards: [
+        ["Name the goal", "Choose a specific skill, decision, transition, or challenge."],
+        ["Look for relevance", "Seek experience and values that connect to that goal."],
+        ["Make a thoughtful ask", "Start with one focused conversation, not a large commitment."]
+      ],
+      reflect: { h: "Who could offer the perspective you need?", p: "Write down one person to learn from and one focused question you would ask them." }
+    },
+    {
+      n: 4, slug: "lesson-4", short: "Effective Mentees", title: "Attitudes and habits of effective mentees", cardDesc: "Habits that turn insight into action.",
+      navTitle: "Attitudes and Habits of Effective Mentees",
+      theme: "Putting insight into action", img: "images/lesson-4.jpg", alt: "A team planning together in front of a wall of sticky notes",
+      hero: "Productive mentoring depends on preparation, curiosity, follow-through, and respect for shared time.",
+      essential: "Make the relationship easy to invest in.",
+      essentialCopy: "Effective mentees arrive with intention, listen actively, test ideas in the real world, and close the loop.",
+      cards: [
+        ["Prepare with purpose", "Bring context and a focused question."],
+        ["Listen with curiosity", "Stay open to perspectives that challenge assumptions."],
+        ["Follow through", "Test an action and return with a useful update."]
+      ],
+      reflect: { h: "What will make your next conversation better?", p: "Choose one small habit to practice consistently. Reliability builds trust faster than a perfect plan." }
+    },
+    {
+      n: 5, slug: "lesson-5", short: "Mentoring Challenges", title: "Common mentoring challenges", cardDesc: "Address setbacks constructively.",
+      navTitle: "Common Mentoring Challenges",
+      theme: "Navigating the real work", img: "images/lesson-5.jpg", alt: "Colleagues talking through ideas at a whiteboard in a bright office",
+      hero: "Every mentoring relationship meets uncertainty, busy schedules, and differing expectations. What matters is how you respond.",
+      essential: "Address friction early, directly, and with care.",
+      essentialCopy: "Clear communication turns a small disconnect into a moment of learning rather than a reason for the relationship to stall.",
+      cards: [
+        ["Momentum slows", "Reconnect with a focused agenda and small next step."],
+        ["Advice misses the mark", "Share more context and explain what would help."],
+        ["Expectations differ", "Clarify rhythm, ownership, and boundaries."]
+      ],
+      reflect: { h: "Which challenge is most likely for you?", p: "Plan one sentence you could use to name the issue with honesty and respect." }
+    },
+    {
+      n: 6, slug: "lesson-6", short: "Summary", title: "Summary", cardDesc: "Bring your learning into practice.",
+      theme: "Bring it together", img: "images/lesson-6.jpg", alt: "Two colleagues share a high five across a desk after a good meeting",
+      hero: "Mentoring works best when you know what it is, what it cannot do, how to find the fit, and how to show up with intention.",
+      essential: "Turn insight into a next step.",
+      essentialCopy: "You now have a practical foundation for seeking guidance, building trust, and staying responsible for your own development.",
+      reflect: { h: "What will you do first?", p: "Choose one action this week that moves you toward a more intentional mentoring relationship.", label: "Course complete" }
+    }
+  ];
+  LESSONS[0].navTitle = "What Is Mentoring?"; LESSONS[1].navTitle = "Limitations of Mentors"; LESSONS[2].navTitle = "How Do I Find a Mentor?"; LESSONS[5].navTitle = "Summary";
+
+  const QUALITIES = [
+    ["It is developmental", "A mentor helps you see the bigger picture, make stronger choices, and grow over time—not just solve today’s problem."],
+    ["It offers perspective", "Mentors share experience and ask useful questions. Their value is often in helping you think differently."],
+    ["It is a two-way commitment", "Effective mentees prepare, listen, follow through, and respect their mentor’s time and boundaries."],
+    ["It creates momentum", "A strong mentoring relationship can build confidence, expand your network, and open development opportunities."]
+  ];
+  const SORT_ITEMS = [
+    { id: "s1", text: "Offer perspective", cat: "can" },
+    { id: "s3", text: "Make every decision for you", cat: "not" },
+    { id: "s4", text: "Prepare for conversations", cat: "you" },
+    { id: "s2", text: "Share experience", cat: "can" },
+    { id: "s6", text: "Do the work for you", cat: "not" },
+    { id: "s5", text: "Act on useful feedback", cat: "you" }
+  ];
+  const SORT_CATS = [{ id: "can", label: "A mentor can…" }, { id: "you", label: "You are responsible for…" }, { id: "not", label: "Not a mentor’s role" }];
+  const FLIPS = [
+    ["My mentor should tell me exactly what to do.", "Ask for perspective, not a verdict. Bring your context and options. A strong mentor helps you think through the decision rather than making it for you."],
+    ["My mentor will create momentum for me.", "Momentum starts with your follow-through. Prepare questions, make commitments, and return with what you learned."],
+    ["A mentor can solve every obstacle.", "Use obstacles as practice. Your mentor can offer encouragement and perspective while you build confidence by navigating the challenge yourself."]
+  ];
+  const MATCH = [
+    { id: "direction", t: "Career direction", s: "I need perspective on my next move.", next: "Identify one decision or transition you want to discuss." },
+    { id: "skill", t: "Skill growth", s: "I want to become more capable.", next: "Name the skill, the current gap, and one way you want to improve." },
+    { id: "confidence", t: "Confidence", s: "I want steadier judgment.", next: "Choose one situation where better judgment or perspective would help." }
+  ];
+  const HABITS = ["Bring one clear question.", "Share context before asking for advice.", "Capture one action to test.", "Follow up with what you learned."];
+  const HABIT_FEEDBACK = [
+    "Tap the habits you’re ready to practice. Even one makes a difference.",
+    "A strong start. One habit practiced reliably builds trust quickly.",
+    "Nice—two habits create a clear rhythm your mentor will notice.",
+    "Three habits ready. You’re making the relationship easy to invest in.",
+    "All four habits selected. You’re set up for a well-prepared, productive conversation. Start with one and build from there."
+  ];
+  const SCENARIOS = [
+    {
+      id: "a", situation: "Your mentor cancels twice in a row.", q: "What is the strongest next move?",
+      opts: ["Stop reaching out.", "Send a brief note with a focused agenda and flexible times.", "Ask for an open-ended explanation."], right: 1,
+      fb: "This keeps the relationship respectful, practical, and easy to re-engage.",
+      hint: "Look for the option that makes it easiest for a busy mentor to say yes again."
+    },
+    {
+      id: "b", situation: "You leave a conversation feeling misunderstood.", q: "What helps most before the next meeting?",
+      opts: ["Share the missing context and restate the question.", "Ignore the advice and change the subject.", "Assume the relationship cannot work."], right: 0,
+      fb: "Better context gives the other person a fair opportunity to respond more usefully.",
+      hint: "Look for the option that gives your mentor what they need to help you better."
+    }
+  ];
+  const FOCI = [{ id: "career direction", t: "Career direction" }, { id: "a skill to strengthen", t: "A skill to strengthen" }, { id: "a current challenge", t: "A current challenge" }];
+  const COMMITS = [{ id: "prepare one focused question", t: "Prepare one focused question" }, { id: "make a thoughtful first ask", t: "Make a thoughtful first ask" }, { id: "follow through and report back", t: "Follow through and report back" }];
+
+  /* ---------- rail ---------- */
+  function routeOf(h) { const r = (h || "").replace(/^#/, ""); return LESSONS.some((l) => l.slug === r) ? r : "home"; }
+  let route = routeOf(location.hash);
+
+  function doneCount() { return LESSONS.filter((l) => S.done[l.slug]).length; }
+  function renderRail() {
+    const list = $("#rail-list");
+    const items = [`<li><a class="rail-link rail-home" href="#home" data-route="home"${route === "home" ? ' aria-current="page"' : ""}><span class="dot">${I.home}</span><span>Course home</span></a></li>`];
+    LESSONS.forEach((l) => {
+      const done = !!S.done[l.slug];
+      items.push(`<li><a class="rail-link${done ? " done" : ""}" href="#${l.slug}" data-route="${l.slug}"${route === l.slug ? ' aria-current="page"' : ""}>
+        <span class="dot">${done ? I.check + '<span class="sr-only">Completed:</span>' : l.n}</span>
+        <span><small>Lesson ${l.n}</small>${esc(l.navTitle)}</span></a></li>`);
+    });
+    list.innerHTML = items.join("");
+    const c = doneCount();
+    $("#rail-count").textContent = `${c} of 6 lessons`;
+    $("#rail-bar").setAttribute("aria-valuenow", c);
+    $("#rail-bar").setAttribute("aria-valuetext", `${c} of 6 lessons complete`);
+    $("#rail-bar span").style.width = (c / 6 * 100) + "%";
+    $("#topbar-bar span").style.width = (c / 6 * 100) + "%";
+    $("#topbar-count").textContent = `${c}/6 done`;
+    const cur = LESSONS.find((l) => l.slug === route);
+    $("#topbar-title").textContent = cur ? `Lesson ${cur.n} · ${cur.short}` : "Course home";
+  }
+
+  /* drawer */
+  const rail = $("#rail"), scrim = $("#scrim"), menuBtn = $("#menu-btn");
+  menuBtn.innerHTML = I.menu; $("#rail-close").innerHTML = I.x;
+  const mq = window.matchMedia("(max-width: 1023px)");
+  function setDrawer(open) {
+    rail.classList.toggle("open", open); scrim.classList.toggle("open", open);
+    menuBtn.setAttribute("aria-expanded", String(open));
+    if (mq.matches) {
+      $("#view").inert = open; $(".topbar").inert = open;
+      if (open) { rail.setAttribute("role", "dialog"); rail.setAttribute("aria-modal", "true"); setTimeout(() => { ($('.rail-link[aria-current="page"]') || $("#rail-close")).focus(); }, 30); }
+      else { rail.removeAttribute("role"); rail.removeAttribute("aria-modal"); }
+    }
+  }
+  menuBtn.addEventListener("click", () => setDrawer(true));
+  $("#rail-close").addEventListener("click", () => { setDrawer(false); menuBtn.focus(); });
+  scrim.addEventListener("click", () => setDrawer(false));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && rail.classList.contains("open")) { setDrawer(false); menuBtn.focus(); } });
+  mq.addEventListener("change", () => { setDrawer(false); $("#view").inert = false; $(".topbar").inert = false; });
+
+  /* reset */
+  $("#reset-area").addEventListener("click", (e) => {
+    const area = $("#reset-area");
+    if (e.target.id === "reset-btn") {
+      area.innerHTML = `<div class="reset-confirm"><span>Clear progress and notes?</span><button type="button" class="yes" data-reset="yes">Reset</button><button type="button" data-reset="no">Cancel</button></div>`;
+      $('[data-reset="no"]', area).focus();
+    } else if (e.target.dataset.reset) {
+      if (e.target.dataset.reset === "yes") { S = blank(); save(); render(); announce("Progress reset."); }
+      area.innerHTML = `<button type="button" class="linkish" id="reset-btn">Reset my progress</button>`;
+      $("#reset-btn").focus();
+    }
+  });
+
+  /* ---------- routing ---------- */
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("a[data-route]");
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault();
+    go(a.dataset.route);
+  });
+  function go(r) {
+    if (r !== route) { try { history.pushState(null, "", "#" + r); } catch (e) {} }
+    route = r; setDrawer(false); render(true);
+  }
+  window.addEventListener("popstate", () => { route = routeOf(location.hash); render(true); });
+  window.addEventListener("hashchange", () => { const r = routeOf(location.hash); if (r !== route) { route = r; render(true); } });
+
+  let endObserver = null;
+  function render(moveFocus) {
+    if (endObserver) { endObserver.disconnect(); endObserver = null; }
+    const view = $("#view");
+    const lesson = LESSONS.find((l) => l.slug === route);
+    view.innerHTML = lesson ? lessonView(lesson) : homeView();
+    renderRail();
+    document.title = lesson ? `Lesson ${lesson.n}: ${lesson.short} · Mentor Course` : "Supercharging Your Career With a Mentor";
+    if (lesson) bindLesson(lesson);
+    bindNotes();
+    if (moveFocus) {
+      window.scrollTo(0, 0);
+      const h = $("h1", view); if (h) h.focus({ preventScroll: true });
+    }
+  }
+
+  /* ---------- home ---------- */
+  function homeView() {
+    const firstOpen = LESSONS.find((l) => !S.done[l.slug]);
+    const started = doneCount() > 0;
+    const resume = started && firstOpen ? `<a class="btn btn-ghost-light" href="#${firstOpen.slug}" data-route="${firstOpen.slug}">Resume Lesson ${firstOpen.n}</a>` : "";
+    const allDone = doneCount() === 6 ? `<span class="status-chip">${I.checkCircle} Course complete—revisit any lesson anytime.</span>` : "";
+    return `
+    <section class="hero home-hero" aria-labelledby="home-title">
+      <img src="images/home.jpg" alt="Two professionals in a one-on-one mentoring conversation at a conference table">
+      <div class="gutter"><div class="col-wide hero-inner">
+        <span class="eyebrow">Career growth · Mentorship</span>
+        <h1 id="home-title" tabindex="-1">${COURSE}</h1>
+        <p class="lede">Build a more confident career with the insight, challenge, and support of an exceptional mentor.</p>
+        <div class="btn-row" style="margin-top:8px">
+          <a class="btn btn-gold" href="#lesson-1" data-route="lesson-1">Start Course ${I.arrow}</a>
+          ${resume}
+        </div>
+        <div class="meta">
+          <span class="status-chip">${I.clock} 6 short lessons · about 45 minutes, self-paced</span>
+          ${allDone}
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section gutter" aria-labelledby="adv-title">
+      <div class="col-wide adv">
+        <div class="stack">
+          <span class="eyebrow label">Your mentoring advantage</span>
+          <h2 class="h2" id="adv-title" style="font-size:clamp(2rem,4vw,2.75rem)">Turn guidance into momentum.</h2>
+          <div class="prose">
+            <p>A good mentor offers an empathetic ear, encouraging words, and a wealth of professional knowledge, experience, and expertise. They can advise you, challenge you, and connect you with development opportunities to reach your goals.</p>
+            <p>In this course, you’ll discover what mentoring is, how to find a mentor, and the attitudes and habits that build a positive, mutually beneficial mentoring relationship.</p>
+          </div>
+          <div class="learn">
+            <h3>You’ll learn to</h3>
+            <ul>
+              <li>${I.checkCircle}<span>Define mentoring’s value for career growth.</span></li>
+              <li>${I.checkCircle}<span>Find a mentor who matches your goals.</span></li>
+              <li>${I.checkCircle}<span>Set expectations that support both people.</span></li>
+              <li>${I.checkCircle}<span>Navigate common mentoring challenges.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="adv-photo"><img src="images/advantage.jpg" alt="Two colleagues clasp hands in a supportive handshake over a desk" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="section gutter" aria-labelledby="lessons-title">
+      <div class="col-wide">
+        <div class="section-head">
+          <span class="eyebrow label">Course lessons</span>
+          <h2 class="h2" id="lessons-title">Six lessons, one practical path.</h2>
+        </div>
+        <ol class="lesson-grid">
+          ${LESSONS.map((l) => {
+            const done = S.done[l.slug];
+            const now = !done && firstOpen && firstOpen.slug === l.slug && started;
+            const state = done ? `<span class="state done">${I.checkCircle} Completed</span>` : now ? `<span class="state now">${I.arrow} Up next</span>` : `<span class="state">Not started</span>`;
+            return `<li><a class="lesson-card" href="#${l.slug}" data-route="${l.slug}">
+              <div class="thumb"><img src="${l.img}" alt="" loading="lazy"><span aria-hidden="true">0${l.n}</span></div>
+              <div class="body"><span class="sr-only">Lesson ${l.n}:</span><h3>${esc(l.short)}</h3><p>${esc(l.cardDesc)}</p>${state}</div>
+            </a></li>`;
+          }).join("")}
+        </ol>
+      </div>
+    </section>
+    <footer class="footer gutter"><p>${COURSE}</p><p>Photography via Unsplash.</p></footer>`;
+  }
+
+  /* ---------- lesson scaffolding ---------- */
+  function lessonView(l) {
+    const done = S.done[l.slug];
+    const cards = l.cards ? `
+      <section class="stack" aria-labelledby="cards-${l.n}">
+        <h2 class="h3" id="cards-${l.n}">Key ideas</h2>
+        <div class="cards">${l.cards.map((c, i) => `<article class="card"><span class="num" aria-hidden="true">${i + 1}</span><h3>${esc(c[0])}</h3><p>${esc(c[1])}</p></article>`).join("")}</div>
+      </section>` : "";
+    return `
+    <section class="hero" aria-labelledby="lesson-title">
+      <img src="${l.img}" alt="${esc(l.alt)}">
+      <div class="gutter"><div class="col hero-inner">
+        <span class="course-name">${COURSE}</span>
+        <div class="meta">
+          <span class="chip-on-photo">Lesson ${l.n} of 6</span>
+          <span class="chip-on-photo theme">${esc(l.theme)}</span>
+        </div>
+        <h1 id="lesson-title" tabindex="-1">${esc(l.title)}</h1>
+        <p class="lede">${esc(l.hero)}</p>
+        ${done ? `<span class="status-chip">${I.checkCircle} You’ve completed this lesson</span>` : ""}
+      </div></div>
+    </section>
+    <div class="gutter section"><div class="col stack-lg">
+      <section class="essential" aria-labelledby="ess-${l.n}">
+        <h2 class="eyebrow" id="ess-${l.n}" style="font-family:var(--body)">${I.compass} Essential idea</h2>
+        <blockquote>${esc(l.essential)}</blockquote>
+        <p>${esc(l.essentialCopy)}</p>
+      </section>
+      ${cards}
+      ${ACTIVITIES[l.n]()}
+      ${reflection(l)}
+      ${lessonEnd(l)}
+    </div></div>`;
+  }
+
+  function activityHead(kicker, title, text, id) {
+    return `<div class="activity-head"><span class="eyebrow">${I.spark} ${kicker}</span><h2 class="h3" id="${id}">${title}</h2>${text ? `<p>${text}</p>` : ""}</div>`;
+  }
+
+  function reflection(l) {
+    const r = l.reflect;
+    const id = "note-" + l.slug;
+    return `<section class="reflect" aria-labelledby="rf-${l.n}">
+      <span class="eyebrow">${r.label ? I.checkCircle : I.pause} ${esc(r.label || "Pause & reflect")}</span>
+      <h2 id="rf-${l.n}">${esc(r.h)}</h2>
+      <p>${esc(r.p)}</p>
+      <div>
+        <label for="${id}">Your private notes (saved in this browser)</label>
+        <textarea id="${id}" data-note="${l.slug}" placeholder="Write a few words…">${esc(S.notes[l.slug] || "")}</textarea>
+        <div class="saved-note" aria-live="polite" id="${id}-saved"></div>
+      </div>
+    </section>`;
+  }
+
+  function lessonEnd(l) {
+    const next = LESSONS[l.n];
+    const prev = LESSONS[l.n - 2];
+    const prevLink = prev
+      ? `<a class="prev-link" href="#${prev.slug}" data-route="${prev.slug}">${I.back} Lesson ${prev.n}: ${esc(prev.short)}</a>`
+      : `<a class="prev-link" href="#home" data-route="home">${I.back} Course home</a>`;
+    const nextCard = next
+      ? `<a class="next-card" href="#${next.slug}" data-route="${next.slug}"><span><span class="eyebrow">Up next · Lesson ${next.n}</span><strong>${esc(next.navTitle)}</strong></span><span class="arrow">${I.arrow}</span></a>`
+      : `<div class="btn-row"><a class="btn btn-gold" href="#home" data-route="home">${I.home} Return to course home</a></div>`;
+    return `<section class="lesson-end" id="lesson-end" aria-label="Lesson navigation">
+      <span class="complete-badge" id="complete-badge"${S.done[l.slug] ? "" : " hidden"}>${I.checkCircle} Lesson ${l.n} complete</span>
+      ${nextCard}
+      ${prevLink}
+    </section>`;
+  }
+
+  function markDone(slug) {
+    if (S.done[slug]) return;
+    S.done[slug] = true; save(); renderRail();
+    const b = $("#complete-badge"); if (b) b.hidden = false;
+    const l = LESSONS.find((x) => x.slug === slug);
+    announce(`Lesson ${l.n} marked complete. ${doneCount()} of 6 lessons done.`);
+  }
+
+  function bindLesson(l) {
+    const end = $("#lesson-end");
+    if ("IntersectionObserver" in window) {
+      endObserver = new IntersectionObserver((entries) => { if (entries.some((en) => en.isIntersecting)) { markDone(l.slug); endObserver && endObserver.disconnect(); } }, { threshold: .4 });
+      endObserver.observe(end);
+    }
+    end.addEventListener("click", (e) => { if (e.target.closest("a")) markDone(l.slug); }, true);
+    const b = BINDERS[l.n]; if (b) b();
+  }
+
+  let noteTimer = null;
+  function bindNotes() {
+    $$("textarea[data-note]").forEach((t) => {
+      t.addEventListener("input", () => {
+        S.notes[t.dataset.note] = t.value; save();
+        clearTimeout(noteTimer);
+        noteTimer = setTimeout(() => { const s = $("#" + t.id + "-saved"); if (s) s.textContent = t.value.trim() ? "Saved" : ""; }, 500);
+      });
+    });
+  }
+
+  /* ---------- activities ---------- */
+  const ACTIVITIES = {
+    1: () => `<section class="activity" aria-labelledby="act-1">
+        ${activityHead("Interactive · Explore in sequence", "Four qualities of great mentoring", "As you move through the lesson, each idea builds on the one before it.", "act-1")}
+        <div id="l1-root"></div>
+      </section>`,
+    2: () => `<section class="activity" aria-labelledby="act-2a">
+        ${activityHead("Activity 1 · Sort the responsibilities", "Who owns what?", "Drag each statement into the correct category. On a phone or keyboard, select a statement and then choose a category.", "act-2a")}
+        <div id="l2-sort"></div>
+      </section>
+      <section class="activity" aria-labelledby="act-2b">
+        ${activityHead("Activity 2 · Flip to reveal", "Rethink common assumptions", "Each card shows a common belief about mentors. Flip it to see a healthier way to think about it.", "act-2b")}
+        <div class="flips" id="l2-flips"></div>
+      </section>`,
+    3: () => `<section class="activity" aria-labelledby="act-3">
+        ${activityHead("Interactive · Mentor Match Maker", "Choose your starting point.", "Pick the area where a mentor’s perspective would help most right now.", "act-3")}
+        <fieldset class="options opt-grid" id="l3-opts"><legend class="sr-only">Your starting point</legend>
+          ${MATCH.map((m) => `<label class="opt"><input type="radio" name="match" value="${m.id}"${S.match === m.id ? " checked" : ""}><span class="mark" aria-hidden="true"></span><span><strong>${m.t}</strong><span class="sub">${m.s}</span></span></label>`).join("")}
+        </fieldset>
+        <div id="l3-result" aria-live="polite"></div>
+      </section>
+      <section class="stack" aria-labelledby="video-3">
+        <h2 class="h3" id="video-3">Watch: making a thoughtful first approach</h2>
+        <div class="video">
+          <img src="images/video.jpg" alt="" loading="lazy">
+          <div class="v-body">
+            <button class="play" type="button" id="l3-play" aria-describedby="l3-video-desc">${I.play}<span class="sr-only">Play lesson video</span></button>
+            <h3>Lesson video coming soon</h3>
+            <p class="desc" id="l3-video-desc">A short guide to researching and making a thoughtful first approach.</p>
+            <span class="soon" id="l3-soon" aria-live="polite" hidden>This video isn’t available yet. Check back soon.</span>
+          </div>
+        </div>
+      </section>`,
+    4: () => `<section class="activity" aria-labelledby="act-4">
+        ${activityHead("Interactive · Check your mentoring rhythm", "Which habits are you ready for?", "Tap each habit you are ready to practice next time.", "act-4")}
+        <div class="habits" id="l4-habits">
+          ${HABITS.map((h, i) => `<button type="button" class="habit" data-habit="${i}" aria-pressed="${S.habits[i] ? "true" : "false"}"><span class="box" aria-hidden="true">${I.check}</span><span>${h}</span></button>`).join("")}
+        </div>
+        <div class="meter-row"><div class="bar" aria-hidden="true"><span id="l4-bar"></span></div><b id="l4-count"></b></div>
+        <div id="l4-fb" aria-live="polite"></div>
+      </section>`,
+    5: () => `<section class="activity" aria-labelledby="act-5">
+        ${activityHead("Interactive · Scenario Coach", "What would you do?", "Read each situation, choose the strongest response, then check your answer.", "act-5")}
+        ${SCENARIOS.map((sc, si) => `<div class="scenario" id="sc-${sc.id}">
+          <span class="eyebrow">Scenario ${si + 1} of 2</span>
+          <p class="situation">${sc.situation}</p>
+          <fieldset class="options"><legend>${sc.q}</legend>
+            ${sc.opts.map((o, oi) => `<label class="opt" data-oi="${oi}"><input type="radio" name="sc-${sc.id}" value="${oi}"${S.scen[sc.id] === oi ? " checked" : ""}><span class="mark" aria-hidden="true"></span><span>${o}</span></label>`).join("")}
+          </fieldset>
+          <div class="btn-row"><button type="button" class="btn btn-teal" data-check="${sc.id}">Check answer</button></div>
+          <div class="sc-fb" aria-live="polite"></div>
+        </div>`).join("")}
+        <p class="score" id="l5-score"></p>
+      </section>`,
+    6: () => `<section class="stack" aria-labelledby="take-6">
+        <h2 class="h3" id="take-6">Key takeaways</h2>
+        <div class="cards">
+          ${[["01", "Know the role", "Mentors offer perspective—not a substitute for your judgment."], ["02", "Find the fit", "Start with a clear goal and a thoughtful ask."], ["03", "Own the work", "Prepare, test what you learn, and communicate with care."]]
+            .map((c) => `<article class="card"><span class="num" aria-hidden="true">${c[0]}</span><h3>${c[1]}</h3><p>${c[2]}</p></article>`).join("")}
+        </div>
+      </section>
+      <section class="activity" aria-labelledby="act-6">
+        ${activityHead("Interactive · Action-Plan Builder", "Make the course yours.", "Select one focus and one commitment, then build a simple next step.", "act-6")}
+        <fieldset class="options opt-grid" id="l6-focus"><legend>1. Choose a focus</legend>
+          ${FOCI.map((f) => `<label class="opt"><input type="radio" name="focus" value="${f.id}"${S.focus === f.id ? " checked" : ""}><span class="mark" aria-hidden="true"></span><span><strong>${f.t}</strong></span></label>`).join("")}
+        </fieldset>
+        <fieldset class="options opt-grid" id="l6-commit"><legend>2. Choose a commitment</legend>
+          ${COMMITS.map((f) => `<label class="opt"><input type="radio" name="commit" value="${f.id}"${S.commit === f.id ? " checked" : ""}><span class="mark" aria-hidden="true"></span><span><strong>${f.t}</strong></span></label>`).join("")}
+        </fieldset>
+        <div class="plan-out" id="l6-out" aria-live="polite"></div>
+      </section>`
+  };
+
+  const BINDERS = {
+    1() {
+      const root = $("#l1-root");
+      const draw = (focusNew) => {
+        const reached = Math.min(S.l1, 3);
+        const all = S.l1 >= 4;
+        let html = `<div class="steps-meter" aria-hidden="true">${QUALITIES.map((_, i) => `<i class="${i <= reached || all ? "on" : ""}"></i>`).join("")}</div>
+          <p class="sr-only">${all ? "All four qualities explored." : `Quality ${reached + 1} of 4 shown.`}</p>
+          <ol class="reveal-list" style="margin-top:16px">`;
+        QUALITIES.forEach((q, i) => {
+          if (i <= reached) {
+            const cur = i === reached && !all;
+            html += `<li class="reveal-item${cur ? " current" : ""}${cur && focusNew ? " just" : ""}"><span class="n" aria-hidden="true">${i + 1}</span><div><h3 tabindex="-1" id="q-${i}">${q[0]}</h3><p>${q[1]}</p></div></li>`;
+          } else {
+            html += `<li class="reveal-item locked"><span class="n" aria-hidden="true">${I.lock}</span><span>Quality ${i + 1} unlocks next</span></li>`;
+          }
+        });
+        html += `</ol><div class="btn-row" style="margin-top:20px">`;
+        if (!all) {
+          html += reached < 3
+            ? `<button type="button" class="btn btn-teal" id="l1-next">Reveal quality ${reached + 2} of 4 ${I.arrow}</button>`
+            : `<button type="button" class="btn btn-teal" id="l1-next">Finish exploring ${I.check}</button>`;
+        } else {
+          html += `<button type="button" class="btn btn-outline" id="l1-restart">Explore again</button>`;
+        }
+        html += `</div>`;
+        if (all) html += `<div class="feedback ok" style="margin-top:16px">${I.checkCircle}<p><b>Nicely done.</b> Mentoring grows you over time, shifts how you think, asks something of both people, and builds momentum you can carry forward.</p></div>`;
+        root.innerHTML = html;
+        const nx = $("#l1-next", root), rs = $("#l1-restart", root);
+        if (nx) nx.addEventListener("click", () => {
+          S.l1 = Math.min(S.l1 + 1, 4); save(); draw(true);
+          if (S.l1 < 4) { const h = $("#q-" + S.l1); h && h.focus(); }
+          else { const b = $("#l1-restart"); b && b.focus(); announce("All four qualities explored."); }
+        });
+        if (rs) rs.addEventListener("click", () => { S.l1 = 0; save(); draw(false); $("#l1-next").focus(); });
+      };
+      draw(false);
+    },
+
+    2() {
+      const root = $("#l2-sort");
+      let selected = null;
+      const placed = () => SORT_ITEMS.filter((it) => S.sort[it.id]);
+      const chip = (it) => {
+        const st = S.sortChecked && S.sort[it.id] ? (S.sort[it.id] === it.cat ? "right" : "wrong") : "";
+        const icon = st === "right" ? I.check : st === "wrong" ? I.x : `<span class="grip">${I.grip}</span>`;
+        const where = S.sort[it.id] ? SORT_CATS.find((c) => c.id === S.sort[it.id]).label : "not yet placed";
+        const verdict = st === "right" ? ", correct" : st === "wrong" ? ", incorrect" : "";
+        return `<button type="button" class="sort-chip ${st}" draggable="true" data-item="${it.id}" aria-pressed="${selected === it.id}" aria-label="${esc(it.text)}, ${esc(where)}${verdict}">${icon}<span>${esc(it.text)}</span></button>`;
+      };
+      const draw = (focusId) => {
+        const bankItems = SORT_ITEMS.filter((it) => !S.sort[it.id]);
+        const allPlaced = bankItems.length === 0;
+        const correct = SORT_ITEMS.filter((it) => S.sort[it.id] === it.cat).length;
+        let fb = "";
+        if (S.sortChecked) {
+          fb = correct === 6
+            ? `<div class="feedback ok">${I.checkCircle}<p><b>All six sorted correctly.</b> Mentors offer perspective and experience. Preparation and action stay with you, and no mentor should make your decisions or do your work.</p></div>`
+            : `<div class="feedback bad">${I.xCircle}<p><b>${correct} of 6 in the right place.</b> Statements marked with an × belong somewhere else. Select <b>Try again</b> to move them back.</p></div>`;
+        } else if (selected) {
+          const it = SORT_ITEMS.find((x) => x.id === selected);
+          fb = `<div class="feedback info">${I.info}<p>“${esc(it.text)}” selected. Now choose a category below.</p></div>`;
+        }
+        root.innerHTML = `
+          <div class="stack" style="gap:16px">
+            <div><h3 class="eyebrow" style="font-family:var(--body);color:var(--ink-soft);margin-bottom:10px">Statements</h3>
+              <div class="sort-bank${allPlaced ? " empty" : ""}" data-zone="bank">${bankItems.map(chip).join("")}</div>
+            </div>
+            <div class="sort-zones">
+              ${SORT_CATS.map((c) => `<div class="zone${selected ? " drop-ready" : ""}" data-zone="${c.id}" role="group" aria-label="${esc(c.label)}">
+                <h4>${esc(c.label)}</h4>
+                <div class="zone-items">${SORT_ITEMS.filter((it) => S.sort[it.id] === c.id).map(chip).join("")}</div>
+                ${selected && S.sort[selected] !== c.id ? `<button type="button" class="zone-btn" data-place="${c.id}">Place here</button>` : ""}
+              </div>`).join("")}
+            </div>
+            ${selected && S.sort[selected] ? `<div><button type="button" class="btn btn-outline" data-place="bank" style="min-height:40px;padding:8px 16px;font-size:var(--t-sm)">Return to statements</button></div>` : ""}
+            <div aria-live="polite">${fb}</div>
+            <div class="btn-row">
+              ${S.sortChecked
+                ? (correct === 6 ? `<button type="button" class="btn btn-outline" id="sort-reset">Start over</button>` : `<button type="button" class="btn btn-teal" id="sort-retry">Try again</button>`)
+                : `<button type="button" class="btn btn-teal" id="sort-check"${allPlaced ? "" : ' aria-disabled="true"'}>Check my sorting</button>
+                   <span class="score">${placed().length} of 6 placed</span>`}
+            </div>
+          </div>`;
+        if (focusId) { const el = $(focusId, root); if (el) el.focus(); }
+      };
+      const place = (id, zone) => {
+        if (zone === "bank") delete S.sort[id]; else S.sort[id] = zone;
+        S.sortChecked = false; selected = null; save();
+        const it = SORT_ITEMS.find((x) => x.id === id);
+        announce(zone === "bank" ? `${it.text} returned to statements.` : `${it.text} placed in ${SORT_CATS.find((c) => c.id === zone).label}`);
+        draw(`[data-item="${id}"]`);
+      };
+      root.addEventListener("click", (e) => {
+        const c = e.target.closest(".sort-chip");
+        const p = e.target.closest("[data-place]");
+        if (p && selected) { place(selected, p.dataset.place); return; }
+        if (c) {
+          if (S.sortChecked) return;
+          const id = c.dataset.item;
+          selected = selected === id ? null : id; draw(`[data-item="${id}"]`); return;
+        }
+        if (e.target.closest("#sort-check")) {
+          if (placed().length < 6) { announce("Place all six statements before checking."); return; }
+          S.sortChecked = true; save(); draw("#sort-retry, #sort-reset");
+          const n = SORT_ITEMS.filter((it) => S.sort[it.id] === it.cat).length;
+          announce(n === 6 ? "All six sorted correctly." : `${n} of 6 correct.`);
+          return;
+        }
+        if (e.target.closest("#sort-retry")) {
+          SORT_ITEMS.forEach((it) => { if (S.sort[it.id] !== it.cat) delete S.sort[it.id]; });
+          S.sortChecked = false; save(); draw(".sort-bank .sort-chip"); return;
+        }
+        if (e.target.closest("#sort-reset")) { S.sort = {}; S.sortChecked = false; save(); draw(".sort-chip"); return; }
+        const z = e.target.closest(".zone");
+        if (z && selected) place(selected, z.dataset.zone);
+      });
+      root.addEventListener("keydown", (e) => { if (e.key === "Escape" && selected) { const id = selected; selected = null; draw(`[data-item="${id}"]`); } });
+      /* native drag and drop for mouse */
+      root.addEventListener("dragstart", (e) => {
+        const c = e.target.closest(".sort-chip"); if (!c || S.sortChecked) { e.preventDefault(); return; }
+        e.dataTransfer.setData("text/plain", c.dataset.item); e.dataTransfer.effectAllowed = "move";
+        setTimeout(() => c.classList.add("dragging"), 0);
+      });
+      root.addEventListener("dragend", (e) => { const c = e.target.closest(".sort-chip"); if (c) c.classList.remove("dragging"); $$(".drag-over", root).forEach((z) => z.classList.remove("drag-over")); });
+      root.addEventListener("dragover", (e) => { const z = e.target.closest("[data-zone]"); if (z) { e.preventDefault(); z.classList.add("drag-over"); } });
+      root.addEventListener("dragleave", (e) => { const z = e.target.closest("[data-zone]"); if (z && !z.contains(e.relatedTarget)) z.classList.remove("drag-over"); });
+      root.addEventListener("drop", (e) => { const z = e.target.closest("[data-zone]"); if (!z) return; e.preventDefault(); const id = e.dataTransfer.getData("text/plain"); if (id) place(id, z.dataset.zone); });
+      draw();
+
+      /* flip cards */
+      const fl = $("#l2-flips");
+      fl.innerHTML = FLIPS.map((f, i) => {
+        const on = !!S.flips[i];
+        return `<button type="button" class="flip" data-flip="${i}" aria-pressed="${on}" aria-label="Myth ${i + 1}: ${esc(f[0])}. ${on ? "Revealed: " + esc(f[1]) : "Select to reveal a better approach."}">
+          <span class="flip-inner">
+            <span class="face front" aria-hidden="true"><span class="hint">Common belief ${i + 1}</span><q>${esc(f[0])}</q><span class="hint">${I.flip} Tap to flip</span></span>
+            <span class="face back" aria-hidden="true"><span class="hint">A better approach</span><p>${esc(f[1])}</p><span class="hint">${I.flip} Tap to flip back</span></span>
+          </span></button>`;
+      }).join("");
+      fl.addEventListener("click", (e) => {
+        const b = e.target.closest(".flip"); if (!b) return;
+        const i = +b.dataset.flip; S.flips[i] = !S.flips[i]; save();
+        b.setAttribute("aria-pressed", String(S.flips[i]));
+        b.setAttribute("aria-label", `Myth ${i + 1}: ${FLIPS[i][0]}. ${S.flips[i] ? "Revealed: " + FLIPS[i][1] : "Select to reveal a better approach."}`);
+        if (S.flips[i]) announce(FLIPS[i][1]);
+      });
+    },
+
+    3() {
+      const out = $("#l3-result");
+      const draw = () => {
+        const m = MATCH.find((x) => x.id === S.match);
+        out.innerHTML = m ? `<div class="result"><span class="eyebrow">Your next step · ${m.t}</span><p>${m.next}</p></div>`
+          : `<div class="feedback info">${I.info}<p>Choose an option to see a focused next step.</p></div>`;
+      };
+      $("#l3-opts").addEventListener("change", (e) => { S.match = e.target.value; save(); draw(); });
+      draw();
+      $("#l3-play").addEventListener("click", () => { $("#l3-soon").hidden = false; });
+    },
+
+    4() {
+      const draw = () => {
+        const n = HABITS.filter((_, i) => S.habits[i]).length;
+        $("#l4-bar").style.width = (n / 4 * 100) + "%";
+        $("#l4-count").textContent = `${n} of 4 habits selected`;
+        $("#l4-fb").innerHTML = `<div class="feedback ${n === 4 ? "ok" : "info"}">${n === 4 ? I.checkCircle : I.spark}<p>${HABIT_FEEDBACK[n]}</p></div>`;
+      };
+      $("#l4-habits").addEventListener("click", (e) => {
+        const b = e.target.closest(".habit"); if (!b) return;
+        const i = +b.dataset.habit; S.habits[i] = !S.habits[i]; save();
+        b.setAttribute("aria-pressed", String(!!S.habits[i])); draw();
+      });
+      draw();
+    },
+
+    5() {
+      const drawScore = () => {
+        const n = SCENARIOS.filter((sc) => S.scenChecked[sc.id] && S.scen[sc.id] === sc.right).length;
+        $("#l5-score").textContent = `${n} of 2 scenarios solved${n === 2 ? ". Great coaching instincts." : ""}`;
+      };
+      const drawOne = (sc) => {
+        const box = $("#sc-" + sc.id);
+        const fbEl = $(".sc-fb", box);
+        $$(".opt", box).forEach((o) => o.classList.remove("is-right", "is-wrong"));
+        if (!S.scenChecked[sc.id] || S.scen[sc.id] === undefined) { fbEl.innerHTML = ""; return; }
+        const pick = S.scen[sc.id];
+        const ok = pick === sc.right;
+        $(`.opt[data-oi="${pick}"]`, box).classList.add(ok ? "is-right" : "is-wrong");
+        fbEl.innerHTML = ok
+          ? `<div class="feedback ok">${I.checkCircle}<p><b>Strongest move.</b> ${sc.fb}</p></div>`
+          : `<div class="feedback bad">${I.xCircle}<p><b>Not the strongest move.</b> ${sc.hint} Choose another option and check again.</p></div>`;
+      };
+      SCENARIOS.forEach((sc) => {
+        const box = $("#sc-" + sc.id);
+        box.addEventListener("change", (e) => {
+          S.scen[sc.id] = +e.target.value; S.scenChecked[sc.id] = false; save(); drawOne(sc); drawScore();
+        });
+        $(`[data-check="${sc.id}"]`, box).addEventListener("click", () => {
+          if (S.scen[sc.id] === undefined) { $(".sc-fb", box).innerHTML = `<div class="feedback info">${I.info}<p>Choose an option first.</p></div>`; return; }
+          S.scenChecked[sc.id] = true; save(); drawOne(sc); drawScore();
+        });
+        drawOne(sc);
+      });
+      drawScore();
+    },
+
+    6() {
+      const out = $("#l6-out");
+      const draw = () => {
+        if (S.focus && S.commit) {
+          const plan = `My next step: I will focus on ${S.focus} and commit to ${S.commit}.`;
+          out.innerHTML = `<span class="eyebrow">Your action plan</span><p class="plan">${esc(plan)}</p>
+            <div class="btn-row"><button type="button" class="btn btn-gold" id="l6-copy">Copy my plan</button><span id="l6-copied" style="font-size:var(--t-sm);color:var(--aqua)"></span></div>`;
+          $("#l6-copy").addEventListener("click", () => {
+            const done = () => { $("#l6-copied").textContent = "Copied to clipboard"; };
+            const fallback = () => { const r = document.createRange(); r.selectNodeContents($(".plan", out)); const s = getSelection(); s.removeAllRanges(); s.addRange(r); $("#l6-copied").textContent = "Selected. Press Ctrl+C or ⌘C to copy."; };
+            try { navigator.clipboard.writeText(plan).then(done, fallback); } catch (e) { fallback(); }
+          });
+        } else {
+          const need = !S.focus && !S.commit ? "a focus and a commitment" : !S.focus ? "a focus" : "a commitment";
+          out.innerHTML = `<span class="eyebrow">Your action plan</span><p class="wait">Choose ${need} to build your plan.</p>`;
+        }
+      };
+      $("#l6-focus").addEventListener("change", (e) => { S.focus = e.target.value; save(); draw(); });
+      $("#l6-commit").addEventListener("change", (e) => { S.commit = e.target.value; save(); draw(); });
+      draw();
+    }
+  };
+
+  render(false);
+})();
+</script>
+</body>
+</html>
